@@ -1,0 +1,23 @@
+# usage (*):
+#  1) cd to directory with this file
+#  2) $ conda env create
+#     -or-
+#     $ conda env update
+#  3) source activate XYZ
+#
+#     where name: XYZ appears below
+#  4) source deactivate
+#
+#  * conda installation required - https://conda.io/docs/install/full.html
+#
+name: azure-test
+dependencies:
+- python=3.6.1
+
+# enable pip support
+- pip=9.0.1
+
+# list of pip packages
+- pip:
+  - azure-servicebus
+
